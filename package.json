@@ -1,0 +1,32 @@
+{
+  "name": "survey-website",
+  "version": "1.0.0",
+  "description": "An application for users to create a survey, enter a list of emails to forward the survey to and view survey feedback.",
+  "main": "app.js",
+  "engines": {
+    "node": "11.10.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halimah22/survey-website.git"
+  },
+  "author": "Halimah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halimah22/survey-website/issues"
+  },
+  "homepage": "https://github.com/Halimah22/survey-website#readme",
+  "dependencies": {
+    "cookie-session": "^1.3.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "nodemon": "^1.19.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
