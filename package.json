@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Halimah22/survey-website#readme",
   "dependencies": {
+    "concurrently": "^4.1.0",
     "cookie-session": "^1.3.3",
     "express": "^4.16.4",
     "mongoose": "^5.5.5",
