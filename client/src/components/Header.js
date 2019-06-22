@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 class Header extends Component {
     renderContent(){
         switch(this.props.auth){
             case null:
                 return 'Still deciding';
             case false:
-                return 'Im logged out';
+                return ( <li><a href="/auth/google">Login With Google</a></li>);
             default:
-                return ' Im logged in';
+                return <li><a>Logout</a></li>;
         }        
 
     }
@@ -31,7 +32,7 @@ class Header extends Component {
 }
 
 function mapStateToProps({auth}){
-    return { auth};
+    return { auth };
 }
 
 export default connect(mapStateToProps)(Header);
