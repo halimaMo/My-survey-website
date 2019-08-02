@@ -17,5 +17,7 @@ module.exports = app => {
             _user: req.user.id,
             dateSent: Date.now
         });
+        //How we send our email
+        const mailer = new Mailerr();
     });
 };
