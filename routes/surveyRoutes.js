@@ -18,6 +18,6 @@ module.exports = app => {
             dateSent: Date.now
         });
         //How we send our email
-        const mailer = new Mailerr();
+        const mailer = new Mailerr(survey, template);
     });
 };
